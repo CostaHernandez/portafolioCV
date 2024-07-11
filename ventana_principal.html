@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Enlace al archivo CSS local -->
+  <link rel="stylesheet" href="./CSS/ventana.css">
+  <!-- Enlaces a las fuentes de Font Awesome y Swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Ventana Principal</title>
+</head>
+
+<body>
+  <!-- header design -->
+  <header class="header">
+    <a href="#" class="logo">Portafolio</a>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Inicio</a>
+      <a href="#about"> Acerca de</a>
+      <a href="#services">Estudios</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#titulos">Titulos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+
+    <div class="bx bx-moon" id="darkMode-icon"></div>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+
+    <button id="redirectButton" class="arrow-icon"><i class="fas fa-arrow-circle-right"></i></button>
+
+  </header>
+
+  <!-- home section design -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hola, mi nombre es</h3>
+      <h1>Diego Sandi </h1>
+      <p>
+        Bienvenidos a mi Portafolio, Sitio donde te hablo un poco sobre mi y mis proyectos.
+      </p>
+      <p>Actualmente estoy en busqueda de empleo, soy un Desarrollador Web con multiples estudio y titulos</p>
+
+      <div class="social-media">
+        <a href="https://github.com/CostaHernandez" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://codepen.io/Diego-Hernandez-the-flexboxer" target="_blank"><i class='bx bxl-codepen'></i></a>
+        <a href="https://www.linkedin.com/in/diego-e-hernadez-2159532b8/" target="_blank"><i
+            class='bx bxl-linkedin'></i></a>
+      </div>
+
+      <a href="./pdf/mi-cv.pdf" class="btn">Descargar CV</a>
+    </div>
+
+    <div class="profession-container">
+      <div class="profession-box">
+        <div class="profession" style="--i:0;">
+          <i class='bx bx-code-alt'></i>
+          <h3>Desarrollador Web</h3>
+        </div>
+        <div class="profession" style="--i:1;">
+          <i class='fas fa-tools'></i>
+          <h3>Soporte Ti</h3>
+        </div>
+        <div class="profession" style="--i:2;">
+          <i class='bx bx-code-alt'></i>
+          <h3>Emprendimiento</h3>
+        </div>
+        <div class="profession" style="--i:3;">
+          <i class='bx bx-pencil'></i>
+          <h3>Diseñadora Web</h3>
+        </div>
+
+        <div class="circle"></div>
+      </div>
+
+      <div class="overlay"></div>
+    </div>
+
+    <div class="home-img">
+      <img src="./img/portada.png">
+    </div>
+  </section>
+
+  <!-- about section design -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="./img/diego.jpg">
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">Acerca de <span>Mi</span></h2>
+      <p>
+        Soy una persona proactiva y dedicada, apasionada por el aprendizaje continuo y la mejora constante en el campo
+        del desarrollo web. Con una sólida formación académica y experiencia práctica, he adquirido un dominio versátil
+        de varios lenguajes de programación y tecnologías emergentes. Mi capacidad para adaptarme rápidamente a nuevos
+        desafíos me impulsa tanto a nivel personal como profesional, permitiéndome abordar proyectos complejos con
+        confianza y eficiencia.
+      </p>
+      <p>
+        Me considero responsable y comprometido con los objetivos del equipo y del proyecto. Mi enfoque colaborativo y
+        amable me permite no solo trabajar de manera efectiva en equipo, sino también establecer relaciones positivas y
+        duraderas con colegas y clientes. Estoy constantemente buscando oportunidades para aplicar mis habilidades
+        técnicas y mi creatividad en soluciones innovadoras que superen las expectativas del cliente.
+      </p>
+      <p id="last-paragraph" class="hidden">
+        Agradezco sinceramente su visita a mi sitio web y su interés en conocerme mejor. A través de mi portafolio,
+        podrán explorar proyectos significativos que he desarrollado, destacando mi capacidad para traducir ideas
+        complejas en aplicaciones prácticas y funcionales. Estoy abierto a cualquier comentario o sugerencia que pueda
+        contribuir a mi crecimiento y mejora continua, ya que estoy comprometido con mi desarrollo profesional y la
+        excelencia en cada proyecto que emprendo.
+      </p>
+
+      <a  class="btn" id="read-more-btn">leer más</a>
+    </div>
+  </section>
+
+  <!-- services section design -->
+  <section class="services" id="services">
+    <h2 class="heading">Mi <span>Servicios</span></h2>
+
+    <div class="services-container">
+      <div class="services-box">
+        <i class='bx bx-code-alt'></i>
+        <h3>Desarrollo Web</h3>
+        <p>El desarrollo web es el proceso de crear y mantener sitios web, abarcando diseño, programación del lado del
+          cliente (HTML, CSS, JavaScript) y del servidor (PHP, Python, bases de datos).
+          Su objetivo es ofrecer experiencias digitales funcionales y atractivas para los usuarios.</p>
+        <a href="https://github.com/CostaHernandez" class="btn">más</a>
+      </div>
+      <div class="services-box">
+        <i class='bx bx-code-alt'></i>
+        <h3>Diseñador Web</h3>
+        <p>El diseño web se enfoca en crear la estructura visual y funcional de sitios en internet, utilizando
+          herramientas como HTML, CSS y JavaScript.
+          Su objetivo principal es mejorar la experiencia del usuario con interfaces intuitivas y atractivas para
+          mejorar la experiencia del usuario.</p>
+        <a href="https://www.behance.net/diegosh" class="btn">más</a>
+      </div>
+      <div class="services-box">
+        <i class='fas fa-tools'></i>
+        <h3>Soporte Ti</h3>
+        <p>El soporte TI se refiere al servicio que proporciona asistencia técnica para resolver problemas y mantener la
+          operatividad de sistemas informáticos,
+          redes y software. Su objetivo es garantizar el funcionamiento eficiente y seguro de la tecnología empresarial.
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- portfolio section design -->
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">Últimos <span>Proyectos</span></h2>
+
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="https://encoded.pe/images/portfolio1.jpg" alt="">
+
+        <div class="portfolio-layer">
+          <h4>Pagina Web</h4>
+          <p>¡Bienvenidos! Los invito a explorar mi sitio web, donde podrán descubrir mi trabajo en detalle. Espero que
+            encuentren inspiración y valor en lo que tengo para compartir.</p>
+          <a class="btn" href="./Portafolio.html"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="https://encoded.pe/images/portfolio2.jpg" alt="">
+
+        <div class="portfolio-layer">
+          <h4>Pagina Web</h4>
+          <p>¡Bienvenidos! Los invito a explorar mi sitio web, donde podrán descubrir mi trabajo en detalle. Espero que
+            encuentren inspiración y valor en lo que tengo para compartir.</p>
+          <a class="btn" href="./Portafolio.html"><i class='bx bx-link-external'></i></a>
+        </div>
+        <div class="portfolio-box">
+          <img src="https://encoded.pe/images/portfolio3.jpg" alt="">
+
+          <div class="portfolio-layer">
+            <h4>Pagina Web</h4>
+            <p>¡Bienvenidos! Los invito a explorar mi sitio web, donde podrán descubrir mi trabajo en detalle. Espero
+              que encuentren inspiración y valor en lo que tengo para compartir.</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="https://encoded.pe/images/portfolio4.jpg" alt="">
+
+          <div class="portfolio-layer">
+            <h4>Pagina Web</h4>
+            <p>¡Bienvenidos! Los invito a explorar mi sitio web, donde podrán descubrir mi trabajo en detalle. Espero
+              que encuentren inspiración y valor en lo que tengo para compartir.</p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="https://encoded.pe/images/portfolio5.jpg" alt="">
+
+          <div class="portfolio-layer">
+            <h4>Pagina Web</h4>
+            <p>¡Bienvenidos! Los invito a explorar mi sitio web, donde podrán descubrir mi trabajo en detalle. Espero
+              que encuentren inspiración y valor en lo que tengo para compartir.</p>
+            <a class="btn" href="./Portafolio.html"><i class='bx bx-link-external'></i></a>
+          </div>
+          <div class="portfolio-box">
+            <img src="https://encoded.pe/images/portfolio6.jpg" alt="">
+
+            <div class="portfolio-layer">
+              <h4>Pagina Web</h4>
+              <p>¡Bienvenidos! Los invito a explorar mi sitio web, donde podrán descubrir mi trabajo en detalle. Espero
+                que encuentren inspiración y valor en lo que tengo para compartir.</p>
+              <a class="btn" href="./Portafolio.html"><i class='bx bx-link-external'></i></a>
+
+
+            </div>
+          </div>
+
+  </section>
+
+  <!-- testimonial design -->
+  <section class="services" id="titulos">
+    <div class="phrases-container">
+      <h2 class="heading">Titulos y<span> logros</span></h2>
+
+      <div class="phrases-wrapper">
+        <div class="phrases-box mySwiper">
+          <div class="phrases-content swiper-wrapper">
+            <div class="phrases-slide swiper-slide">
+              <img src="./img/titulo1.jpeg" alt="">
+              <h3>Diego Sandi Hernandez</h3>
+
+            </div>
+            <div class="phrases-slide swiper-slide">
+              <img src="./img/titulo2.jpeg" alt="">
+              <h3>Diego Sandi Hernandez</h3>
+
+            </div>
+
+            <div class="phrases-slide swiper-slide">
+              <img src="./img/titulo3.jpeg" alt="">
+              <h3>Diego Sandi Hernandez</h3>
+
+            </div>
+
+            <div class="phrases-slide swiper-slide">
+              <img src="./img/titulo4.jpeg" alt="">
+              <h3>Diego Sandi Hernandez</h3>
+
+            </div>
+
+            <div class="phrases-slide swiper-slide">
+              <img src="./img/titulo5.jpeg" alt="">
+              <h3>Diego Sandi Hernandez</h3>
+
+            </div>
+
+            <div class="phrases-slide swiper-slide">
+              <img src="./img/titulo6.jpeg" alt="">
+              <h3>Diego Sandi Hernandez</h3>
+
+            </div>
+
+            <div class="phrases-slide swiper-slide">
+              <img src="./img/certificado1.jpg" alt="">
+              <h3>Diego Sandi Hernandez</h3>
+
+            </div>
+
+            <div class="phrases-slide swiper-slide">
+              <img src="./img/certificado2.jpg" alt="">
+              <h3>Diego Sandi Hernandez</h3>
+
+            </div>
+
+            <div class="phrases-slide swiper-slide">
+              <img src="./img/certificado3.jpg" alt="">
+              <h3>Diego Sandi Hernandez</h3>
+
+            </div>
+
+            <div class="phrases-slide swiper-slide">
+              <img src="./img/certificado4.jpg" alt="">
+              <h3>Diego Sandi Hernandez</h3>
+
+            </div>
+
+            <div class="phrases-slide swiper-slide">
+              <img src="./img/certificado5.jpg" alt="">
+              <h3>Diego Sandi Hernandez</h3>
+            </div>
+
+            <div class="phrases-slide swiper-slide">
+              <img src="./img/certificado6.jpg" alt="">
+              <h3>Diego Sandi Hernandez</h3>
+            </div>
+
+            <div class="phrases-slide swiper-slide">
+              <p>Para obtener más información sobre los títulos y certificados obtenidos, pulsa el botón "Ver más". Se
+                desplegará una página donde encontrarás toda la información detallada sobre cada uno de los títulos.</p>
+              <br>
+              <p>Los títulos y certificados disponibles abarcan una amplia gama de disciplinas y niveles de
+                especialización, desde programas de formación profesional hasta grados académicos avanzados. Cada título
+                incluye información sobre los requisitos de ingreso, el plan de estudios, las competencias adquiridas y
+                las posibles salidas profesionales.</p>
+              <br>
+              <p>Además, podrás encontrar detalles sobre la institución que otorga cada título, su prestigio,
+                acreditaciones y el reconocimiento que tiene en el ámbito profesional y académico. También se ofrece
+                información sobre las modalidades de estudio disponibles, ya sean presenciales, semipresenciales o a
+                distancia, para que puedas elegir la que mejor se adapte a tus necesidades y circunstancias.</p>
+              <br>
+              <p>Para conocer más sobre cada título y certificado, simplemente haz clic en el botón "Ver más". Esto te
+                llevará a una página donde se despliega toda la información específica que necesitas, incluyendo
+                testimonios de exalumnos, datos sobre el mercado laboral y las oportunidades de carrera relacionadas con
+                cada campo de estudio.</p>
+              <br>
+              <br>
+              <button id="redirectButtonT" class="btn">Mirar mas</button>
+            </div>
+          </div>
+
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact section design -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contacta <span>Me!</span></h2>
+
+    <form action="https://formspree.io/f/mjkbbgew" method="POST">
+
+      <div class="input-box">
+        <input type="text" name="name" placeholder="Nombre completo" required>
+        <input type="email" name="email" placeholder="Dirección de correo electrónico" required>
+      </div>
+      <div class="input-box">
+        <input type="number" name="mobile" placeholder="Número de teléfono móvil">
+        <input type="text" name="subject" placeholder="Asunto del correo electrónico">
+      </div>
+      <textarea name="message" cols="30" rows="10" placeholder="Su mensaje" required></textarea>
+      <input type="submit" value="Enviar mensaje" class="btn">
+    </form>
+  </section>
+
+
+
+
+  <!-- footer design -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p> Diego Sandi Hernandez &copy; 2024 | Portafolio.</p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
+
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+  <!-- Enlaces a los archivos JavaScript -->
+  <script src="./JS/ventana.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>

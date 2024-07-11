@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: initial;
+    background: var(--bg-color);
+    color: var(--text-color);
+    contain: initial;
+    text-align: center;
+    font-family: "Roboto Mono";
+    padding: 1em;
+    position: relative;
+    /* Asegura que la posición sea relativa para los elementos absolutos */
+  }
+  
+  /* Línea diagonal naranja */
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 708px;
+    pointer-events: none;
+    /* Evita que interfiera con los eventos del usuario */
+    background:
+      linear-gradient(135deg,
+        transparent 50%,
+        var(--main-color) 50%);
+  }
+  
+  img {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+  }
+  
+  #pagination {
+    position: fixed;
+    bottom: 10px;
+    /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    /* Asegura que esté al frente de otros elementos */
+    background-color: white;
+    /* Fondo blanco para que sea más visible */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #pagination button.active {
+    background-color: #0b061fda;
+  }
+  
+  #pagination button:hover:not(.active) {
+    background-color: #0056b3;
+  }
+  
+  :root {
+    --bg-color: #faf0ca;
+    --text-color: #0d3b66;
+    --main-color: #f48b5e;
+    --blue-color: #0d3b66;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  *::selection {
+    background: var(--main-color);
+    color: var(--bg-color);
+  }
+  
+  .dark-mode {
+    --bg-color: #0b061f;
+    --text-color: #fdfdfd;
+    --blue-color: #0d3b66;
+    --shadow-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .header.sticky .navbar a::before {
+    background: var(--main-color);
+    opacity: 0.7;
+  }
+  
+  #darkMode-icon {
+    font-size: 2.4rem;
+    color: var(--white-color);
+    cursor: pointer;
+  }
+  
+  .header.sticky #darkMode-icon {
+    color: var(--text-color);
+    opacity: 0.9;
+  }
+  
+  .arrow-icon {
+    transform: var(--blue-color);
+    transform: unset;
+    transform: translateX(1360px);
+    position: absolute;
+    font-size: 1.9rem;
+    color: var(--white-color);
+    font-weight: 500px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    background: var(--main-color);
+    border-radius: 0.6rem;
+    box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
+    font-size: 1.6rem;
+    color: var(--white-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    border: 0.2rem solid transparent;
+    transition: 0.5s ease;
+    transform: translateY(-40px);
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: transparent;
+    background: var(--main-color);
+  }
+  
+  .ibtn {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    background: var(--main-color);
+    border-radius: 0.6rem;
+    box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
+    font-size: 1.6rem;
+    color: var(--white-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    border: 0.2rem solid transparent;
+    transition: 0.5s ease;
+  }
+  
+  .ibtn:hover {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+  }
+
+  /*pagina*/
+  
