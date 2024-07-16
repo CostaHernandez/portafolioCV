@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             imageUrl: './img/p5.png',
-            link: 'https://costahernandez.github.io/RestauranteHamburguesas/'
+            link: 'https://costahernandez.github.io/Hamburgesa/'
         },
         {
             imageUrl: './img/p6.png',
-            link: 'https:/costahernandez.github.io/Burguerweb0.1/'
+            link: 'https://costahernandez.github.io/Burguerweb0.1/'
         },
         // Agregar más proyectos para completar otras páginas
         {
